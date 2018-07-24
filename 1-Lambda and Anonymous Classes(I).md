@@ -62,7 +62,7 @@ Collections.sort(list, new Comparator<String>(){// 接口名
     }
 });
 ```
-上述代码通过内部类重载了`Comparator`接口的`compare()`方法，实现比较逻辑。采用Lambda表达式可简写如下：
+上述代码通过内部类重载了`Comparator`(策略模式)接口的`compare()`方法，实现比较逻辑。采用Lambda表达式可简写如下：
 
 ```Java
 // JDK8 Lambda表达式写法
