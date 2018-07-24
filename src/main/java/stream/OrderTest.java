@@ -3,6 +3,7 @@ package stream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * @description:
@@ -14,6 +15,17 @@ public class OrderTest {
         Collections.sort(orders);
         orders.sort((o1,o2)->{
             return 1;
+        });
+
+        orders.forEach(p->{
+
+        });
+
+        orders.forEach(new Consumer<Order>() {
+            @Override
+            public void accept(Order order) {
+
+            }
         });
     }
 }
